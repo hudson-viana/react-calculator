@@ -8,6 +8,12 @@ const App = () => {
       <Content>
         <Input />
         <Row>
+          <Button label="*" />
+          <Button label="/" />
+          <Button label="C" />
+          <Button label="?" />
+        </Row>
+        <Row>
           <Button label="7" />
           <Button label="8" />
           <Button label="9" />
