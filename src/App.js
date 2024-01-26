@@ -20,7 +20,7 @@ const App = () => {
         <Input value={currentNumber} />
         <Row>
           <Button label="C" onClick={() => handleOnClear()} />
-          <Button label="B" />
+          <Button label="DEL" />
           <Button label="%" onClick={() => handleAddNumber("%")} />
           <Button label="/" onClick={() => handleAddNumber("/")} />
         </Row>
