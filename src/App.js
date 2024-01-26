@@ -14,14 +14,6 @@ const App = () => {
     setCurrentNumber("0");
   };
 
-  /*
-  const handleSum = (num) => {
-    let myArray = num.split("+");
-    let sum = myArray.reduce((a, b) => parseInt(a, 10) + parseInt(b, 10), 0);
-    setCurrentNumber(sum);
-  };
-  */
-
   return (
     <Container>
       <Content>
@@ -54,7 +46,7 @@ const App = () => {
           <Button label="+/-" onClick={() => handleAddNumber("+/-")} />
           <Button label="0" onClick={() => handleAddNumber("0")} />
           <Button label="." onClick={() => handleAddNumber(".")} />
-          <Button label="=" onClick={() => handleSum} />
+          <Button label="=" />
         </Row>
       </Content>
     </Container>
