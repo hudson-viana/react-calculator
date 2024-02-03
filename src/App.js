@@ -35,6 +35,11 @@ const App = () => {
     setCalc(value);
   };
 
+  const deleteAll = () => {
+    setCalc("");
+    setResult("");
+  };
+
   return (
     <div className="App">
       <div className="calculator">
@@ -43,6 +48,9 @@ const App = () => {
           {calc || "0"}
         </div>
         <div className="operators">
+          <button className="operators-symbol2" onClick={() => deleteAll()}>
+            C
+          </button>
           <button className="operators-symbol" onClick={() => updateCalc("/")}>
             ÷
           </button>
@@ -55,7 +63,9 @@ const App = () => {
           <button className="operators-symbol" onClick={() => updateCalc("+")}>
             +
           </button>
-          <button onClick={() => deleteLast()}>DEL</button>
+          <button className="operators-symbol2" onClick={() => deleteLast()}>
+            Del
+          </button>
         </div>
         <div className="digits">
           <button onClick={() => updateCalc("7")}>7</button>

@@ -27,6 +27,7 @@ body {
 .calculator {
   width: 100%;
   max-width: 400px;
+  min-width: 400px;
   background-color: #fff;
   border-radius: 16px;
   overflow: hidden;
@@ -73,7 +74,11 @@ button:hover {
 }
 
 .operators-symbol {
-  font-size: 40px;
+  font-size: 35px;
+}
+
+.operators-symbol2 {
+  font-size: 29px;
 }
 
 .digits {
